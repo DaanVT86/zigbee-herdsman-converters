@@ -4174,7 +4174,7 @@ const definitions: Definition[] = [
         ],
     },
     {
-        fingerprint: tuya.fingerprint('TS0601', ['_TZE204_sxm7l9xa']),
+        fingerprint: tuya.fingerprint('TS0601', ['_TZE204_sxm7l9xa','_TZE204_qasjif9e']),
         model: 'ZY-M100-S',
         vendor: 'TuYa',
         description: 'Mini Human Breathe Sensor',
@@ -4194,6 +4194,7 @@ const definitions: Definition[] = [
             e.numeric('fading_time', ea.STATE_SET).withValueMin(0.5).withValueMax(1500).withValueStep(1)
                 .withDescription('Fading time').withUnit('s'),
         ],
+        
         meta: {
             tuyaDatapoints: [
                 [104, 'illuminance_lux', tuya.valueConverter.raw],
